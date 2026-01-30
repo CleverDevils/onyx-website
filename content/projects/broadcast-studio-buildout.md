@@ -14,7 +14,7 @@ excerpt: "Purpose-built broadcast studio for investor relations, town halls, and
 
 ## Project Vision
 
-Meridian Financial needed an in-house broadcast facility to produce professional-quality content for investor communications, employee town halls, and executive messaging—without relying on external production crews.
+Meridian Financial needed an in-house broadcast facility to produce professional-quality content for investor communications, employee town halls, and executive messaging - without relying on external production crews.
 
 ## Studio Design
 

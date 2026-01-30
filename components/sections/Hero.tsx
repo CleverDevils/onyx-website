@@ -50,7 +50,7 @@ export default function Hero({ projects }: HeroProps) {
       <Container className="relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
           {/* Left Column - Text */}
-          <div className="lg:col-span-4 order-2 lg:order-1">
+          <div className="lg:col-span-4 order-1">
             <p className="text-sm text-brand-400 tracking-wide mb-6">
               Selected Works
             </p>
@@ -81,7 +81,7 @@ export default function Hero({ projects }: HeroProps) {
           </div>
 
           {/* Right Column - Gallery */}
-          <div className="lg:col-span-8 order-1 lg:order-2">
+          <div className="lg:col-span-8 order-2">
             {currentProject ? (
               <div className="relative">
                 {/* Main Image with inset text */}
@@ -149,6 +149,17 @@ export default function Hero({ projects }: HeroProps) {
           </div>
         </div>
       </Container>
+      {/* Scroll indicator */}
+      <button
+        onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-2 text-neutral-500 hover:text-white transition-colors animate-bounce cursor-pointer"
+        aria-label="Scroll to next section"
+      >
+        <span className="text-xs tracking-widest uppercase">Scroll</span>
+        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 9l-7 7-7-7" />
+        </svg>
+      </button>
     </section>
   )
 }

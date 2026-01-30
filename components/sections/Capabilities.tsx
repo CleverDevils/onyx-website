@@ -3,7 +3,7 @@ import Container from '@/components/ui/Container'
 const capabilities = [
   {
     title: 'Corporate Installations',
-    description: 'Conference rooms, boardrooms, and training centers—technology that enhances collaboration without distraction.',
+    description: 'Conference rooms, boardrooms, and training centers - technology that enhances collaboration without distraction.',
     accent: 'brand',
   },
   {
@@ -25,7 +25,7 @@ const capabilities = [
 
 export default function Capabilities() {
   return (
-    <section className="relative py-24 lg:py-32 border-t border-neutral-800/50">
+    <section className="relative py-12 md:py-16 lg:py-20 border-t border-neutral-800/50">
       {/* Subtle gradient */}
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-neutral-850/50 to-transparent" />
 

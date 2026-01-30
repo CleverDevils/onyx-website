@@ -37,15 +37,7 @@ export default function Contact() {
                 </p>
               </a>
 
-              <a
-                href="tel:+15551234567"
-                className="block group"
-              >
-                <p className="text-sm text-neutral-500 mb-2">Phone</p>
-                <p className="text-2xl md:text-3xl text-white group-hover:text-brand-400 transition-colors">
-                  (555) 123-4567
-                </p>
-              </a>
+
             </div>
           </div>
         </div>

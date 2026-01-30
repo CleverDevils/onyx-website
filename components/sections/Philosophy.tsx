@@ -2,7 +2,7 @@ import Container from '@/components/ui/Container'
 
 export default function Philosophy() {
   return (
-    <section id="about" className="relative py-32 lg:py-40 overflow-hidden">
+    <section id="about" className="relative py-12 md:py-16 lg:py-20 overflow-hidden">
       {/* Subtle accent gradient */}
       <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-accent-500/5 to-transparent" />
 
@@ -17,7 +17,7 @@ export default function Philosophy() {
           </p>
 
           <p className="text-lg text-neutral-300 leading-relaxed">
-            Every project begins with listening—understanding how you work, collaborate, and engage with your environment. We design systems that disappear into the architecture, so you can focus on your audience, not the technology.
+            Every project starts by understanding how you work, collaborate, and connect with your environment. We design systems that blend into the architecture, so you can focus on your audience, not the technology.
           </p>
         </div>
       </Container>
