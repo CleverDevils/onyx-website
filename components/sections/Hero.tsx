@@ -150,16 +150,16 @@ export default function Hero({ projects }: HeroProps) {
         </div>
       </Container>
       {/* Scroll indicator */}
-      <button
-        onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-2 text-neutral-500 hover:text-white transition-colors animate-bounce cursor-pointer"
+      <a
+        href="#about"
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-2 text-neutral-500 hover:text-white transition-colors cursor-pointer"
         aria-label="Scroll to next section"
       >
         <span className="text-xs tracking-widest uppercase">Scroll</span>
-        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg className="w-4 h-4 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 9l-7 7-7-7" />
         </svg>
-      </button>
+      </a>
     </section>
   )
 }
