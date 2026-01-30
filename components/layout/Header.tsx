@@ -25,15 +25,19 @@ export default function Header() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? 'bg-neutral-950/95 backdrop-blur-md'
-          : 'bg-transparent'
+          ? 'bg-neutral-900/95 backdrop-blur-md shadow-[0_4px_30px_rgba(196,166,122,0.15)]'
+          : 'bg-neutral-900/80 backdrop-blur-sm shadow-[0_4px_30px_rgba(196,166,122,0.1)]'
       }`}
     >
       <Container>
         <nav className="flex items-center justify-between h-20">
           {/* Logo */}
-          <a href="#" className="text-xl tracking-tight text-white">
-            Onyx
+          <a href="#" className="block">
+            <img
+              src="/images/logo-horizontal.svg"
+              alt="Onyx Integrations"
+              className="h-16 w-auto"
+            />
           </a>
 
           {/* Desktop Navigation */}

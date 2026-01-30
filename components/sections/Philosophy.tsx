@@ -2,15 +2,22 @@ import Container from '@/components/ui/Container'
 
 export default function Philosophy() {
   return (
-    <section id="about" className="py-32 lg:py-40">
-      <Container>
+    <section id="about" className="relative py-32 lg:py-40 overflow-hidden">
+      {/* Subtle accent gradient */}
+      <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-accent-500/5 to-transparent" />
+
+      <Container className="relative">
         <div className="max-w-3xl">
-          <p className="text-sm text-neutral-500 tracking-wide mb-8">
+          <p className="text-sm text-accent-400 tracking-wide mb-8">
             Our Philosophy
           </p>
 
-          <p className="font-display font-normal text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed">
-            We believe great spaces deserve great sound and vision. Every project begins with listening—understanding how you live, work, and experience your environment. Then we design systems that disappear into the architecture while transforming how you engage with your world.
+          <p className="font-display font-normal text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed mb-8">
+            We believe great spaces deserve great sound and vision.
+          </p>
+
+          <p className="text-lg text-neutral-300 leading-relaxed">
+            Every project begins with listening—understanding how you work, collaborate, and engage with your environment. Then we design systems that disappear into the architecture while transforming how you connect with your audience.
           </p>
         </div>
       </Container>

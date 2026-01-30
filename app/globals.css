@@ -8,7 +8,7 @@
   }
 
   body {
-    @apply bg-neutral-950 text-neutral-200 antialiased;
+    @apply bg-neutral-900 text-neutral-200 antialiased;
   }
 
   ::selection {
@@ -27,11 +27,20 @@
 
   .nav-link::after {
     content: '';
-    @apply absolute -bottom-1 left-0 w-0 h-px bg-white transition-all duration-300;
+    @apply absolute -bottom-1 left-0 w-0 h-px bg-brand-400 transition-all duration-300;
   }
 
   .nav-link:hover::after {
     @apply w-full;
+  }
+
+  /* Subtle glow effects */
+  .glow-brand {
+    box-shadow: 0 0 60px -15px rgba(196, 166, 122, 0.3);
+  }
+
+  .glow-accent {
+    box-shadow: 0 0 60px -15px rgba(61, 154, 168, 0.3);
   }
 }
 
@@ -48,7 +57,7 @@
 }
 
 ::-webkit-scrollbar-track {
-  @apply bg-neutral-900;
+  @apply bg-neutral-850;
 }
 
 ::-webkit-scrollbar-thumb {

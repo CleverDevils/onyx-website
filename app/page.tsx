@@ -10,7 +10,7 @@ export default async function Home() {
 
   return (
     <>
-      <Hero />
+      <Hero projects={projects} />
       <Philosophy />
       <Capabilities />
       <SelectedWork projects={projects} />

@@ -7,16 +7,22 @@ interface SelectedWorkProps {
 }
 
 export default function SelectedWork({ projects }: SelectedWorkProps) {
-  // Take up to 4 projects for the layout
   const displayProjects = projects.slice(0, 4)
   const [first, second, third, fourth] = displayProjects
 
   return (
-    <section id="work" className="section-padding border-t border-neutral-800/50">
-      <Container>
-        <div className="mb-16">
-          <p className="text-sm text-neutral-500 tracking-wide">
+    <section id="work" className="relative section-padding border-t border-neutral-800/50 overflow-hidden">
+      {/* Ambient glow */}
+      <div className="absolute top-1/2 left-1/4 w-96 h-96 bg-brand-500/5 rounded-full blur-3xl" />
+      <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-accent-500/5 rounded-full blur-3xl" />
+
+      <Container className="relative">
+        <div className="mb-16 flex items-end justify-between">
+          <p className="text-sm text-brand-400 tracking-wide">
             Selected Work
+          </p>
+          <p className="text-sm text-neutral-500">
+            {projects.length} Projects
           </p>
         </div>
 
@@ -60,7 +66,7 @@ export default function SelectedWork({ projects }: SelectedWorkProps) {
           <div className="mt-16 text-center">
             <a
               href="/projects"
-              className="inline-flex items-center text-neutral-400 hover:text-white transition-colors group"
+              className="inline-flex items-center text-neutral-300 hover:text-brand-400 transition-colors group"
             >
               <span className="text-sm tracking-wide">View all projects</span>
               <svg

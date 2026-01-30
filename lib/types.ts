@@ -2,7 +2,7 @@ export interface Project {
   slug: string
   title: string
   client: string
-  category: 'Commercial' | 'Residential' | 'Corporate'
+  category: 'Corporate' | 'Live Events'
   date: string
   featured: boolean
   thumbnail: string
@@ -16,7 +16,7 @@ export interface ProjectMeta {
   slug: string
   title: string
   client: string
-  category: 'Commercial' | 'Residential' | 'Corporate'
+  category: 'Corporate' | 'Live Events'
   date: string
   featured: boolean
   thumbnail: string

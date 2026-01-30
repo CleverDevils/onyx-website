@@ -4,11 +4,11 @@ client: "Tech Solutions Inc."
 category: "Corporate"
 date: "2024-06-15"
 featured: true
-thumbnail: "/images/projects/corporate-hq-thumb.jpg"
+thumbnail: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&q=80"
 images:
-  - "/images/projects/corporate-hq-1.jpg"
-  - "/images/projects/corporate-hq-2.jpg"
-  - "/images/projects/corporate-hq-3.jpg"
+  - "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1600&q=80"
+  - "https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=1600&q=80"
+  - "https://images.unsplash.com/photo-1577412647305-991150c7d163?w=1600&q=80"
 video: ""
 excerpt: "Complete audiovisual overhaul of a 50,000 sq ft corporate headquarters featuring 15 conference rooms and a state-of-the-art boardroom."
 ---

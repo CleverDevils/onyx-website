@@ -2,12 +2,16 @@ import Container from '@/components/ui/Container'
 
 export default function Contact() {
   return (
-    <section id="contact" className="section-padding border-t border-neutral-800/50">
-      <Container>
+    <section id="contact" className="relative section-padding border-t border-neutral-800/50 overflow-hidden">
+      {/* Gradient background */}
+      <div className="absolute inset-0 bg-gradient-to-br from-neutral-900 via-neutral-850 to-neutral-900" />
+      <div className="absolute bottom-0 left-1/4 w-96 h-96 bg-brand-500/5 rounded-full blur-3xl" />
+
+      <Container className="relative">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8">
           {/* Left Column - Invitation */}
           <div className="lg:col-span-5">
-            <p className="text-sm text-neutral-500 tracking-wide mb-8">
+            <p className="text-sm text-accent-400 tracking-wide mb-8">
               Get in Touch
             </p>
 
