@@ -2,13 +2,10 @@
 
 import { useState, useEffect } from 'react'
 import Container from '@/components/ui/Container'
-import Button from '@/components/ui/Button'
 
 const navLinks = [
-  { label: 'Home', href: '#home' },
+  { label: 'Work', href: '#work' },
   { label: 'About', href: '#about' },
-  { label: 'Services', href: '#services' },
-  { label: 'Projects', href: '#projects' },
   { label: 'Contact', href: '#contact' },
 ]
 
@@ -28,41 +25,29 @@ export default function Header() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? 'bg-dark-900/95 backdrop-blur-md shadow-lg shadow-dark-950/50'
+          ? 'bg-neutral-950/95 backdrop-blur-md'
           : 'bg-transparent'
       }`}
     >
       <Container>
         <nav className="flex items-center justify-between h-20">
           {/* Logo */}
-          <a href="#home" className="flex items-center space-x-2 group">
-            <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-primary-500 to-secondary-500 flex items-center justify-center">
-              <span className="text-white font-bold text-xl">O</span>
-            </div>
-            <span className="text-xl font-bold text-white group-hover:text-primary-400 transition-colors">
-              Onyx<span className="text-primary-400">.</span>
-            </span>
+          <a href="#" className="text-xl tracking-tight text-white">
+            Onyx
           </a>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-12">
             {navLinks.map((link) => (
-              <a key={link.href} href={link.href} className="nav-link">
+              <a key={link.href} href={link.href} className="nav-link text-sm tracking-wide">
                 {link.label}
               </a>
             ))}
           </div>
 
-          {/* CTA Button */}
-          <div className="hidden md:block">
-            <Button href="#contact" size="sm">
-              Get a Quote
-            </Button>
-          </div>
-
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden p-2 text-dark-300 hover:text-white transition-colors"
+            className="md:hidden p-2 text-neutral-400 hover:text-white transition-colors"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label="Toggle menu"
           >
@@ -76,14 +61,14 @@ export default function Header() {
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  strokeWidth={2}
+                  strokeWidth={1.5}
                   d="M6 18L18 6M6 6l12 12"
                 />
               ) : (
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  strokeWidth={2}
+                  strokeWidth={1.5}
                   d="M4 6h16M4 12h16M4 18h16"
                 />
               )}
@@ -93,21 +78,18 @@ export default function Header() {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="md:hidden absolute top-20 left-0 right-0 bg-dark-900/95 backdrop-blur-md border-t border-dark-800 animate-slide-down">
-            <div className="px-4 py-6 space-y-4">
+          <div className="md:hidden absolute top-20 left-0 right-0 bg-neutral-950/95 backdrop-blur-md border-t border-neutral-800/50 animate-slide-down">
+            <div className="px-4 py-8 space-y-6">
               {navLinks.map((link) => (
                 <a
                   key={link.href}
                   href={link.href}
-                  className="block py-2 text-dark-300 hover:text-white transition-colors"
+                  className="block text-neutral-400 hover:text-white transition-colors text-lg"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {link.label}
                 </a>
               ))}
-              <Button href="#contact" className="w-full mt-4">
-                Get a Quote
-              </Button>
             </div>
           </div>
         )}

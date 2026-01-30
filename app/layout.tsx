@@ -1,21 +1,26 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Inter, Playfair_Display } from 'next/font/google'
 import './globals.css'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
+const playfair = Playfair_Display({
+  subsets: ['latin'],
+  variable: '--font-playfair',
+  weight: ['400', '500', '600'],
+})
 
 export const metadata: Metadata = {
-  title: 'Onyx Integrations | Professional AV Integration Services',
-  description: 'Expert audiovisual integration services for commercial, residential, and corporate spaces. Custom AV solutions, installation, and ongoing support.',
-  keywords: ['AV integration', 'audiovisual', 'commercial AV', 'residential AV', 'AV installation', 'smart home', 'conference room'],
-  authors: [{ name: 'Onyx Integrations' }],
+  title: 'Onyx | Audiovisual Design Studio',
+  description: 'We craft immersive audiovisual experiences for commercial and residential spaces.',
+  keywords: ['AV design', 'audiovisual', 'studio', 'immersive experiences', 'AV integration'],
+  authors: [{ name: 'Onyx' }],
   openGraph: {
-    title: 'Onyx Integrations | Professional AV Integration Services',
-    description: 'Expert audiovisual integration services for commercial, residential, and corporate spaces.',
+    title: 'Onyx | Audiovisual Design Studio',
+    description: 'We craft immersive audiovisual experiences for commercial and residential spaces.',
     url: 'https://onyxintegrations.com',
-    siteName: 'Onyx Integrations',
+    siteName: 'Onyx',
     type: 'website',
   },
 }
@@ -26,7 +31,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={inter.variable}>
+    <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
       <body className="min-h-screen flex flex-col">
         <Header />
         <main className="flex-1">

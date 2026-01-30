@@ -4,21 +4,18 @@ interface CardProps {
   children: ReactNode
   className?: string
   hover?: boolean
-  gradient?: boolean
 }
 
 export default function Card({
   children,
   className = '',
   hover = true,
-  gradient = false,
 }: CardProps) {
   return (
     <div
       className={`
-        rounded-xl bg-dark-800/50 backdrop-blur-sm border border-dark-700
-        ${hover ? 'card-hover' : ''}
-        ${gradient ? 'gradient-border' : ''}
+        rounded-lg bg-neutral-900/50 backdrop-blur-sm border border-neutral-800
+        ${hover ? 'transition-all duration-300 hover:border-neutral-700' : ''}
         ${className}
       `}
     >
@@ -52,7 +49,7 @@ interface CardFooterProps {
 
 export function CardFooter({ children, className = '' }: CardFooterProps) {
   return (
-    <div className={`p-6 pt-0 border-t border-dark-700 ${className}`}>
+    <div className={`p-6 pt-0 border-t border-neutral-800 ${className}`}>
       {children}
     </div>
   )
