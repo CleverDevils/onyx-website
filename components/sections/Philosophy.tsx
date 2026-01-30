@@ -13,11 +13,11 @@ export default function Philosophy() {
           </p>
 
           <p className="font-display font-normal text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed mb-8">
-            We believe great spaces deserve great sound and vision.
+            We believe technology should enhance your space, not complicate it.
           </p>
 
           <p className="text-lg text-neutral-300 leading-relaxed">
-            Every project begins with listening—understanding how you work, collaborate, and engage with your environment. Then we design systems that disappear into the architecture while transforming how you connect with your audience.
+            Every project begins with listening—understanding how you work, collaborate, and engage with your environment. We design systems that disappear into the architecture, so you can focus on your audience, not the technology.
           </p>
         </div>
       </Container>
