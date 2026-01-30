@@ -1,5 +1,5 @@
 ---
-title: "Corporate Headquarters AV System"
+title: "Corporate Headquarters AV System "
 client: "Tech Solutions Inc."
 category: "Corporate"
 date: "2024-06-15"

@@ -20,7 +20,7 @@ export default function Contact() {
             </h2>
 
             <p className="text-neutral-400 leading-relaxed">
-              We&apos;d love to hear about it. Reach out and let&apos;s discuss how we can bring your vision to life.
+              We&apos;d love to hear about it. Reach out and let&apos;s discuss how we can help you bring your vision to life.
             </p>
           </div>
 
