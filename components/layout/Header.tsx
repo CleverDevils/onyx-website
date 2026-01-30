@@ -5,7 +5,7 @@ import Container from '@/components/ui/Container'
 
 const navLinks = [
   { label: 'Work', href: '#work' },
-  { label: 'About', href: '#about' },
+  { label: 'Philosophy', href: '#about' },
   { label: 'Contact', href: '#contact' },
 ]
 
