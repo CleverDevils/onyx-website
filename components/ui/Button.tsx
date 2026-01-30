@@ -21,12 +21,12 @@ type ButtonProps = ButtonAsButton | ButtonAsLink
 
 const variants = {
   primary:
-    'bg-gradient-to-r from-primary-600 to-primary-500 hover:from-primary-500 hover:to-primary-400 text-white shadow-lg shadow-primary-500/25 hover:shadow-primary-500/40',
+    'bg-white text-neutral-900 hover:bg-neutral-100',
   secondary:
-    'bg-gradient-to-r from-secondary-600 to-secondary-500 hover:from-secondary-500 hover:to-secondary-400 text-white shadow-lg shadow-secondary-500/25 hover:shadow-secondary-500/40',
+    'bg-neutral-800 text-white hover:bg-neutral-700',
   outline:
-    'border-2 border-primary-500 text-primary-400 hover:bg-primary-500/10 hover:border-primary-400',
-  ghost: 'text-dark-300 hover:text-white hover:bg-dark-800',
+    'border border-neutral-700 text-white hover:bg-neutral-800 hover:border-neutral-600',
+  ghost: 'text-neutral-400 hover:text-white hover:bg-neutral-800',
 }
 
 const sizes = {
@@ -42,7 +42,7 @@ export default function Button({
   className = '',
   ...props
 }: ButtonProps) {
-  const baseClasses = `inline-flex items-center justify-center font-semibold rounded-lg transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 focus:ring-offset-dark-900 disabled:opacity-50 disabled:cursor-not-allowed ${variants[variant]} ${sizes[size]} ${className}`
+  const baseClasses = `inline-flex items-center justify-center font-medium rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-brand-400 focus:ring-offset-2 focus:ring-offset-neutral-950 disabled:opacity-50 disabled:cursor-not-allowed ${variants[variant]} ${sizes[size]} ${className}`
 
   if ('href' in props && props.href) {
     const { href, ...linkProps } = props as ButtonAsLink

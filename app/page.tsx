@@ -1,8 +1,9 @@
 import Hero from '@/components/sections/Hero'
-import About from '@/components/sections/About'
-import Services from '@/components/sections/Services'
-import Projects from '@/components/sections/Projects'
+import Philosophy from '@/components/sections/Philosophy'
+import Capabilities from '@/components/sections/Capabilities'
+import SelectedWork from '@/components/sections/SelectedWork'
 import Contact from '@/components/sections/Contact'
+import SectionDivider from '@/components/ui/SectionDivider'
 import { getAllProjects } from '@/lib/projects'
 
 export default async function Home() {
@@ -10,10 +11,14 @@ export default async function Home() {
 
   return (
     <>
-      <Hero />
-      <About />
-      <Services />
-      <Projects projects={projects} />
+      <Hero projects={projects} />
+      <SectionDivider />
+      <Philosophy />
+      <SectionDivider />
+      <Capabilities />
+      <SectionDivider />
+      <SelectedWork projects={projects} />
+      <SectionDivider />
       <Contact />
     </>
   )

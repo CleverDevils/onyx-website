@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1004.14 1004.14">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-1, .cls-2 {
+        stroke-width: 0px;
+      }
+
+      .cls-3 {
+        font-size: 14px;
+        letter-spacing: 1.1em;
+      }
+
+      .cls-3, .cls-2, .cls-4 {
+        fill: #231f20;
+      }
+
+      .cls-3, .cls-4 {
+        font-family: Galvji, Galvji;
+      }
+
+      .cls-4 {
+        font-size: 107px;
+      }
+    </style>
+  </defs>
+  <rect class="cls-2" width="1000" height="1000"/>
+  <rect class="cls-1" x="4.14" y="4.14" width="1000" height="1000"/>
+  <circle class="cls-1" cx="500" cy="500.57" r="173.29"/>
+  <rect class="cls-2" x="488.49" y="326.88" width="26.75" height="50.62"/>
+  <path class="cls-2" d="M477.63,717.03v-196.55h44.73v196.55c109.36-11.19,194.67-103.58,194.67-215.89,0-119.86-97.17-217.03-217.03-217.03s-217.03,97.17-217.03,217.03c0,112.31,85.31,204.69,194.66,215.89ZM500,330.19c93.89,0,170.27,76.39,170.27,170.27,0,76.29-50.5,140.81-119.75,162.4v-43.82c46.07-19.69,78.47-65.39,78.47-118.58,0-71.12-57.86-128.99-128.99-128.99s-128.99,57.87-128.99,128.99c0,53.19,32.4,98.88,78.47,118.57v43.83c-69.25-21.59-119.74-86.11-119.74-162.4,0-93.88,76.39-170.27,170.27-170.27Z"/>
+  <rect class="cls-2" x="500.5" y="520.48" width="21.8" height="21.8"/>
+  <rect class="cls-1" x="500.5" y="498.68" width="21.8" height="21.8"/>
+  <rect class="cls-1" x="478.7" y="476.88" width="21.8" height="21.8"/>
+  <rect class="cls-1" x="500.5" y="455.08" width="21.8" height="21.8"/>
+  <path class="cls-1" d="M522.36,717.03s-7.26.8-21.86.8-22.87-.8-22.87-.8v-174.75h44.73v174.75Z"/>
+  <rect class="cls-1" x="477.63" y="520.48" width="22.87" height="21.8"/>
+  <text class="cls-4" transform="translate(357.77 818.31)"><tspan x="0" y="0">ONYX</tspan></text>
+  <text class="cls-3" transform="translate(376.01 841.51)"><tspan x="0" y="0">INTEGRATIONS</tspan></text>
+</svg>
